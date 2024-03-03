@@ -12,11 +12,11 @@ index['Date'] = pd.to_datetime(index['Date'])
 
 # Combine data
 data = stocks.merge(companies[['Symbol', 'Shortname']], on='Symbol')
-data = data.merge(index, on='Date')
+
 
 # Save to SQLite database
 db_path = "sqlite:///sp500_data.db"
 engine = create_engine(db_path)
 data.to_sql('stocks', engine, index=False, if_exists='replace')
-
+index.to_sql('sp500', engine, index=False, if_exists='replace')
 print("Data processing and database creation completed successfully.")
