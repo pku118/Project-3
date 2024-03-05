@@ -36,7 +36,7 @@ python app.py & app2.py
     - Data is fetched from an SQLite database (data/sp500_data.db).
 
 Dependencies
-    - Dash: https://dash.plotly.com/
-    - Plotly: https://plotly.com/python/
-    - Pandas: https://pandas.pydata.org/
+    - Dash: https://dash.plotly.com
+    - Plotly: https://plotly.com/python
+    - Pandas: https://pandas.pydata.org
     - SQLite3: https://docs.python.org/3/library/sqlite3.html
